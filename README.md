@@ -1,4 +1,5 @@
 # Angular Espresso
+for this test I use angular espresso . it'a free template
 
 Start an app with AngularJS on the client, Express + Node + Socket.IO as your back-end, all written in CoffeeScript.
 
@@ -69,10 +70,7 @@ In the future, I will be adding support for testing. I won't implement file watc
 If you want to help, fork/clone/share the project, suggest new features, and/or submit pull requests.
 Contact me directly at william.r.mora@gmail.com or [@_williammora](https://twitter.com/_williammora).
 
-## Author
-William Mora - [@_williammora](https://twitter.com/_williammora) - http://www.williammora.com
 
-## References
 
 For more on AngularJS: http://angularjs.org
 
