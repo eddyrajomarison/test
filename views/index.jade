@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div.hero-unit
+
+    h1 Job Applicants visualization app
+
+
+    div(ng-controller='AppCtrl')
+      button.btn.btn-primary(
+        ng-click="login()"
+        ng-disabled="loginStatus.status == 'connected'"
+        ) Connect with Facebook
+      ul.nav.nav-pills.nav-stacked
+        li
+          a(href='#/home') List users
+        li
+          a(href='#/adduser') add new user
+      hr
+      div(ng-view)
+
+    div
+      | Angular Espresso, version &nbsp;
+      span(app-version)
+
+  script(src='/lib/jquery/jquery-2.0.0.min.js')
+  script(src='/lib/highcharts/highstock.js')
+  script(src='/lib/highcharts/exporting.js')
+  script(src='/lib/bootstrap/js/bootstrap.js')
+  script(src='/lib/socket.io/socket.io.js')
+  script(src='/lib/angular/angular.js')
+  script(src='/lib/angular/angular-easyfb.js')
+  script(src='/lib/angular/angular-highlightjs.min.js')
+  script(src='/lib/angular/angular-resource.js')
+  script(src='/angular/app.js')
+  script(src='/angular/services.js')
+  script(src='/angular/controllers.js')
+  script(src='/angular/filters.js')
+  script(src='/angular/directives.js')

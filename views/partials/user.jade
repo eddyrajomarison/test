@@ -1,0 +1,88 @@
+div.row
+  h2 add user
+
+  form(
+    role="form"
+    ng-submit="submit()"
+    )
+    .col-lg-6
+
+      div.form-group
+        label Sex
+        select.field(
+          class="form-control"
+          ng-model="user.sex"
+          ng-options="s for s in sex"
+        )
+
+      div.form-group
+        label Name
+        input.field(
+          type="text"
+          class="form-control"
+          ng-model="user.name"
+        )
+
+      div.form-group
+        label Mail
+        input.field(
+          type="email"
+          class="form-control"
+          ng-model="user.mail"
+        )
+      div.form-group
+        label Age
+        input.field(
+          type="number"
+          class="form-control"
+          ng-model="user.age"
+        )
+      div.form-group
+        label Qualification
+        select.field(
+          class="form-control"
+          ng-model="user.qual"
+          ng-options="q for q in qual"
+        )
+      div.form-group
+        label Language
+        input.field(
+          type="text"
+          class="form-control"
+          ng-model="user.lang"
+        )
+      div.form-group
+        label Tel
+        input.field(
+          type="text"
+          class="form-control"
+          ng-model="user.tel"
+        )
+
+
+
+      br
+
+      a(
+        ng-show="new"
+        href="#/home"
+        class="btn btn-info"
+        ).col-lg-offset-6 undow
+
+      button(
+        ng-show="new"
+        type="submit"
+        class="btn btn-info"
+        ).col-lg-offset-1 save
+
+      a(
+        ng-show="!new"
+        href="#/home"
+        class="btn btn-info"
+        ).col-lg-offset-6 back
+
+      button(
+        ng-show="!new"
+        type="submit"
+        class="btn btn-info"
+        ).col-lg-offset-1 update
