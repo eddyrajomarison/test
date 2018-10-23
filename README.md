@@ -64,11 +64,6 @@ At the root folder, there are two more folders to consider:
 included
 * Views: Your views/partial views should go here
 
-In the future, I will be adding support for testing. I won't implement file watching until it is stable in node.
-
-## Contribute
-If you want to help, fork/clone/share the project, suggest new features, and/or submit pull requests.
-Contact me directly at william.r.mora@gmail.com or [@_williammora](https://twitter.com/_williammora).
 
 
 
